@@ -1,0 +1,20 @@
+{
+    "intents":[
+        {
+            "tag":"nuevo_usuario",
+            "patterns":["buenas, soy nuevo usario","buenas tardes soy nuevo usario","soy nuevo","primera vez","nuevo cliente", "soy nuevo cliente"]
+        },
+        {
+            "tag":"antiguo_usuario",
+            "patterns":["buenas, soy antiguo usuario","buenas tardes soy antiguo usuario","soy antiguo","soy antiguo cliente","si cuento con historia clinica","soy viejo usuario","soy viejo cliente","ya cuento con historia clínica"]  
+        },
+        {
+            "tag":"nuevo_proceso",
+            "patterns":["nuevo tratamiento","nuevo proceso"]
+        },
+        {
+            "tag":"consulta",
+            "patterns":["nueva consulta","consulta nueva"]
+        }
+    ]
+}

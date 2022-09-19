@@ -1,0 +1,21 @@
+## mensaje de bienvenida:
+
+Bienvenidos a cpal, Soy wikibot su asistente:
+Usted es ¿nuevo usario o antiguo usario?
+
+
+## mensaje nuevo usario
+
+Le envio este enlace para hacer el triaje
+
+## mensaje de antiguo usuario
+
+Genial! , Tiene una consulta sobre un proceso que actualmente esta realizando o Desea realizar un nuevo tratamiento
+
+## nuevo tratamiento (usuari antiguo)
+
+Para realizar un nuevo tratmiento debe realizarun triaje en el siguiente enlace, y debe especificar que ya cuenta con historia clínica
+
+## consulta proceso actualmente
+
+Cual es su consulta?
