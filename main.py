@@ -1,6 +1,7 @@
-from operator import imod
+
 from fastapi import FastAPI
 from fastapi import Body, status
+
 
 
 from model import User 
@@ -32,5 +33,5 @@ def text(user : User = Body(...)):
 
      
     '''
-    return user
+    return {'reply':user.message}
 
