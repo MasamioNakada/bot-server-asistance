@@ -2,7 +2,8 @@
 from fastapi import FastAPI
 from fastapi import Body, status
 
-
+#from chatbot import wikibot
+from respuesta import val_message, get_byte_code,test
 
 from model import User 
 
@@ -33,5 +34,15 @@ def text(user : User = Body(...)):
 
      
     '''
-    return {'reply':user.message}
+    message = user.message
+    return {'reply':val_message(message)}
+
+@app.post(
+    path = '/image',
+    status_code=status.HTTP_202_ACCEPTED,
+    tags=['image_message'],
+    summary="Send Image"
+)
+def image(user: User = Body(...)):
+    return {'reply': get_byte_code(user)}
 

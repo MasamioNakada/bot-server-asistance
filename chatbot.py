@@ -3,12 +3,11 @@ import random
 import json
 import pickle
 import numpy as np
-import spacy
-from spacy.lang.es.examples import sentences 
-nlp = spacy.load("es_core_news_sm")
+import en_core_web_sm
+nlp = en_core_web_sm.load()
 
 
-from nltk.stem import SnowballStemmer, WordNetLemmatizer
+from nltk.stem import  WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
 
@@ -62,7 +61,7 @@ def get_response(ints, intents_json):
     for i in list_of_intents:
         if(i['tag']== tag):
             print("achou tag %s"%(tag))
-            result = random.choice(i['responses'])
+            result = i
             break
     return result
 
@@ -72,5 +71,9 @@ def wikibot_test(msg):
 
 def wikibot(msg):
     ints = predict_class(msg, model)
+    print(ints)
     res = get_response(ints, intents)
     return res
+
+if __name__ == "__main__":
+    print(wikibot('Hola'))

@@ -1,0 +1,14 @@
+{
+    "intents":[
+        {
+            "tag":"localidad",
+            "patterns":"1",
+            "responses":"Contamos con dos locales:\n*Surco*📍: Martín Pizarro 172 Urb. Valle Hermoso, Surco, Lima 33 - Perú\n*Madgalena*📍: Av. Pershing 910, Magdalena, Lima 17 - Perú"
+        },
+        {
+            "tag":"diagnostico",
+            "patterns":"2",
+            "responses":"function"
+        }
+    ]
+}

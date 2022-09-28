@@ -15,8 +15,12 @@
             "patterns":["nuevo tratamiento","nuevo proceso"]
         },
         {
-            "tag":"consulta",
+            "tag":"consulta_proceso",
             "patterns":["nueva consulta","consulta nueva"]
+        },
+        {
+            "tag":"audi",
+            "patterns":["Sobre audicion",""]
         }
     ]
 }
