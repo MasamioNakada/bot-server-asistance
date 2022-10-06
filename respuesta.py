@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 import json
 from model import User
 import base64
+import os
+
+
 
 from datetime import datetime
 
@@ -38,10 +41,25 @@ def val_message(message:str):
         return str(dict_func[r['tag']]) 
 
 
+
+
+
+
+
+
+        
+
+def byte_code_to_image(path:str) -> str:
+    with open(path, "rb") as imageFile:
+        data = base64.b64encode(imageFile.read())
+    return data
+
+
 def get_byte_code(user: User):
-    path = f'{user.user_id}-{datetime.now().date().strftime("%d-%m-%Y")}.jpeg'
+    path = f'{user.user_id}-{datetime.now().date().strftime("%d-%m-%y")}.jpeg'
     decodeit = open(path, 'wb')
-    decodeit.write(base64.b64decode(str.encode(user.message)))
+    data = base64.b64decode(str.encode(user.message))
+    decodeit.write(data)
     decodeit.close()
     return  path
 

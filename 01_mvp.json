@@ -2,13 +2,23 @@
     "intents":[
         {
             "tag":"localidad",
-            "patterns":"1",
+            "patterns":"/1",
             "responses":"Contamos con dos locales:\n*Surco*📍: Martín Pizarro 172 Urb. Valle Hermoso, Surco, Lima 33 - Perú\n*Madgalena*📍: Av. Pershing 910, Magdalena, Lima 17 - Perú"
         },
         {
-            "tag":"diagnostico",
-            "patterns":"2",
-            "responses":"function"
+            "tag":"triaje",
+            "patterns":"/2",
+            "responses":"Ingrese al siguiente *link* para completar el triaje.\n\nhttps://intra.cpal.edu.pe/IntraCPALv2/system/public/triage.aspx?id=UVkZUIvq7PvEXDOItuinsaTIhIMh12RfQJGPdMaWmjQ=&dni=72697409&docType=DNI"
+        },
+        {
+            "tag":"start",
+            "patterns":"/start",
+            "responses":"Hola, soy el asistente virtual de CPAL. ¿En qué te puedo ayudar?\n\n1. ¿Dónde están ubicados?\n2. ¿Quieres atenderte con nosotros?"
+        },
+        {
+            "tag":"triaje",
+            "patterns":"/3",
+            "responses":"Ingrese al siguiente *link* para completar el triaje.\n\nhttps://intra.cpal.edu.pe/IntraCPALv2/system/public/triage.aspx?id=UVkZUIvq7PvEXDOItuinsaTIhIMh12RfQJGPdMaWmjQ=&dni=72697409&docType=DNI"
         }
     ]
 }

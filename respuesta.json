@@ -1,0 +1,96 @@
+{
+    "menu": {
+        "message":"Hola, soy el asistente virtual de CPAL. ¿En qué te puedo ayudar?\n\n1. ¿Dónde están ubicados?\n2. ¿Quieres atenderte con nosotros?",
+        "options": [
+            {
+                "label": "1. ¿Dónde están ubicados?",
+                "value": "1",
+                "category": "location"
+            },
+            {
+                "label": "2. ¿Quieres atenderte con nosotros?",
+                "value": "2",
+                "category":"triaje"
+            }
+        ],
+        "layer":"0",
+        "value":["menu","0"],
+        "direccion":""
+    },
+    "location": {
+        "message": "Contamos con dos locales:\n\n1. *Surco*📍: Martín Pizarro 172 Urb. Valle Hermoso, Surco, Lima 33 - Perú\n2. *Madgalena*📍: Av. Pershing 910, Magdalena, Lima 17 - Perú",
+        "options": [
+            {
+                "label": "1. *Surco*📍: Martín Pizarro 172 Urb. Valle Hermoso, Surco, Lima 33 - Perú",
+                "value": "1",
+                "category": "location_surco"
+            },
+            {
+                "label": "2. *Madgalena*📍: Av. Pershing 910, Magdalena, Lima 17 - Perú",
+                "value": "2",
+                "category":"location_magdalena"
+            }
+        ],
+        "layer":"1",
+        "value":"1",
+        "direccion":"l"
+    },
+    "location_surco": {
+        "message": "Los numeros de telefono son:\n\n📞 01 714 0000\n📞 01 714 0001\n\nPara volver al menú principal escribe *menu*",
+        "options": [
+            {
+                "label": "Para volver al menú principal escribe *menu*",
+                "value": "menu",
+                "category": "menu"
+            }
+        ],
+        "layer":"2",
+        "value":"1",
+        "direccion":"l"
+        
+    },
+    "location_magdalena": {
+        "message": "Los numeros de telefono son:\n\n📞 01 914 0000\n📞 01 914 0001\n\nPara volver al menú principal escribe *menu*",
+        "options": [
+            {
+                "label": "Para volver al menú principal escribe *menu*",
+                "value": "menu",
+                 "category":"menu"
+            }
+        ],
+        "layer":"2",
+        "value":"2",
+        "direccion":"r"
+    },
+    "triaje": {
+        "message": "Para atenderte con nosotros, debes llenar el formulario de triaje. ¿Deseas continuar?",
+        "options": [
+            {
+                "label": "Si",
+                "value": "si",
+                "category": "triaje_si"
+            },
+            {
+                "label": "No",
+                "value": "no",
+                "category":"menu"
+            }
+        ],
+        "layer":"1",
+        "value":"2",
+        "direccion":"r"
+    },
+    "triage_si": {
+        "message": "Para llenar el formulario de triaje, debes ingresar a este link: https://forms.gle/3Z7Z7Z7Z7Z7Z7Z7Z7",
+        "options": [
+            {
+                "label": "Para volver al menú principal escribe *menu*",
+                "value": "menu",
+                "category":"menu"
+            }
+        ],
+        "layer":"2",
+        "value":"si",
+        "direccion":"r"
+    }
+}

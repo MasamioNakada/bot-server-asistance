@@ -1,6 +1,10 @@
 
 from fastapi import FastAPI
 from fastapi import Body, status
+from fastapi.responses import FileResponse
+
+import io
+from starlette.responses import StreamingResponse
 
 #from chatbot import wikibot
 from respuesta import val_message, get_byte_code,test
@@ -44,5 +48,12 @@ def text(user : User = Body(...)):
     summary="Send Image"
 )
 def image(user: User = Body(...)):
-    return {'reply': get_byte_code(user)}
+    path  = get_byte_code(user)
+    return {"reply":path}
+
+@app.get(
+    path='/image/{path}'
+)
+def ex(path:str):
+    return FileResponse(path) 
 
