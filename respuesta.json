@@ -13,20 +13,20 @@
                 "category":"triaje"
             }
         ],
-        "layer":"0",
+        "layer":"1",
         "value":["menu","0"],
         "direccion":""
     },
     "location": {
-        "message": "Contamos con dos locales:\n\n1. *Surco*📍: Martín Pizarro 172 Urb. Valle Hermoso, Surco, Lima 33 - Perú\n2. *Madgalena*📍: Av. Pershing 910, Magdalena, Lima 17 - Perú",
+        "message": "Contamos con dos locales:\n\n1. *Surco*: Martín Pizarro 172 Urb. Valle Hermoso, Surco, Lima 33 - Perú\n2. *Madgalena*: Av. Pershing 910, Magdalena, Lima 17 - Perú",
         "options": [
             {
-                "label": "1. *Surco*📍: Martín Pizarro 172 Urb. Valle Hermoso, Surco, Lima 33 - Perú",
+                "label": "1. *Surco*: Martín Pizarro 172 Urb. Valle Hermoso, Surco, Lima 33 - Perú",
                 "value": "1",
                 "category": "location_surco"
             },
             {
-                "label": "2. *Madgalena*📍: Av. Pershing 910, Magdalena, Lima 17 - Perú",
+                "label": "2. *Madgalena*: Av. Pershing 910, Magdalena, Lima 17 - Perú",
                 "value": "2",
                 "category":"location_magdalena"
             }
@@ -36,7 +36,7 @@
         "direccion":"l"
     },
     "location_surco": {
-        "message": "Los numeros de telefono son:\n\n📞 01 714 0000\n📞 01 714 0001\n\nPara volver al menú principal escribe *menu*",
+        "message": "Los numeros de telefono son:\n\n 01 714 0000\n 01 714 0001\n\nPara volver al menú principal escribe *menu*",
         "options": [
             {
                 "label": "Para volver al menú principal escribe *menu*",
@@ -50,7 +50,7 @@
         
     },
     "location_magdalena": {
-        "message": "Los numeros de telefono son:\n\n📞 01 914 0000\n📞 01 914 0001\n\nPara volver al menú principal escribe *menu*",
+        "message": "Los numeros de telefono son:\n\n 01 914 0000\n 01 914 0001\n\nPara volver al menú principal escribe *menu*",
         "options": [
             {
                 "label": "Para volver al menú principal escribe *menu*",

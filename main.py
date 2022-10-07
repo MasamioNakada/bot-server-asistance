@@ -7,7 +7,7 @@ import io
 from starlette.responses import StreamingResponse
 
 #from chatbot import wikibot
-from respuesta import val_message, get_byte_code,test
+from respuesta import val_message, get_byte_code, Historial, SendText
 
 from model import User 
 
@@ -38,8 +38,12 @@ def text(user : User = Body(...)):
 
      
     '''
-    message = user.message
-    return {'reply':val_message(message)}
+
+    dic= {}
+    hist = Historial(dic)
+    hist.add_user(user)
+    
+    return {'reply':SendText(user,hist).tree_desicion()}
 
 @app.post(
     path = '/image',
